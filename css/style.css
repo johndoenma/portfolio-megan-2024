@@ -133,7 +133,7 @@ section {
 /* STRICTLY FOR SUBPAGES */
 
 .solution {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 3em;
 }
 
@@ -183,6 +183,9 @@ section {
 
 
 /* PROJECTS BUTTONS */
+.projects {
+    padding-bottom: 6em;
+}
 
 .next::after {
     content: '\276F';
@@ -544,7 +547,7 @@ video {
     color: rgb(77 125 97);
     display: block;
     font-size: 4em;
-    padding: .4em .4em;
+    padding: 2vh .4em;
     text-decoration: none;
     text-transform: lowercase;
 }
@@ -601,6 +604,12 @@ video {
 
 .toggle-menu span:after {
     top: -7px;
+}
+
+.toggle-menu.active {
+    position: fixed;
+    right: 14px;
+    top: 14px;
 }
 
 .toggle-menu.active span {
@@ -713,6 +722,26 @@ video {
     background-repeat: no-repeat;
     /* object-fit: contain; */
 }
+
+.overview,
+.challenge,
+.solution {
+    margin: 6em 0;
+}
+
+.overview {
+    padding-right: 30%;
+}
+
+.challenge {
+    text-align: right;
+    padding-left: 30%;
+}
+
+.solution {
+    padding-right: 30%;
+}
+
 
 /* HAIKYUU */
 
@@ -844,9 +873,6 @@ video {
     color: rgb(255 164 182);
 }
 
-.right-challenge {
-    text-align: right;
-}
 
 .ab-prototype:hover {
     color: rgb(197 103 227);
@@ -964,7 +990,7 @@ video {
 .ic-bg {
     background-color: rgb(36 39 42);
     color: rgb(234 245 222);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .ic-green {
@@ -1052,13 +1078,14 @@ code {
 }
 
 .about-container {
-    max-height: 100vh;
+    /* max-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1em;
+    padding-bottom: 4em;
 }
 
 .about-container>div {
@@ -1073,7 +1100,7 @@ code {
     background-color: var(--box-color);
     border: 2px dashed var(--title-border);
     overflow-y: scroll;
-    max-height: 10em;
+    /* max-height: 10em; */
     width: 30vw;
     padding: 0 1em;
     margin: auto;

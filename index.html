@@ -64,11 +64,7 @@
 
                 </li>
 
-                <li>
 
-                    <a href="#">contact</a>
-
-                </li>
 
                 <li>
 
@@ -172,12 +168,6 @@
 
             <li>
 
-                <a href="#">contact</a>
-
-            </li>
-
-            <li>
-
                 <a href="gallery.html">gallery</a>
 
             </li>
@@ -218,8 +208,8 @@
                 index = index + 1;
                 TweenLite.to(this, .5, {
                     delay: index * 0.1,
-                    x: getRandomInt(board.width() / 3 * -1, board.width() / 3),
-                    y: getRandomInt(board.height() / 3 * -1, board.height() / 3)
+                    x: getRandomInt(board.width() / 2.7 * -1, board.width() / 2.7),
+                    y: getRandomInt(board.height() / 2.7 * -1, board.height() / 2.7)
                 });
                 TweenLite.to($(this).find('.spin'), .5, {
                     delay: index * 0.1,
